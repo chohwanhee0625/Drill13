@@ -119,6 +119,7 @@ class Zombie:
 
     def run_away_to_boy(self, r = 0.5):
         self.move_to_boy(face=-1)
+        self.dir += math.pi // 2
         return BehaviorTree.SUCCESS
 
     def compare_balls(self):
